@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Nonserif;
+    src: url(fonts/Nonserif.ttf);
+}
+
+@font-face {
+    font-family: Roman, 'Times New Roman', Times, serif;
+    src: url(fonts/RomanSerif.ttf);
+}
+
+@font-face {
+    font-family: Sono;
+    src: url(fonts/Sono-Regular.woff2);
+}
+
+body {
+    color: #36013e;
+    font-family: Roman, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 125%;
+}
+
+h1 {
+    font-family: Sono, 'Courier New', Courier, monospace;
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+
+.container {
+    padding: 2em 2em 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    body {
+        font-size: 1.3em;
+    }
+
+    .container {
+        padding: 30px 0px;
+        margin: 0px 30px;
+    }
+
+    .container {
+        padding: 1em 0.4em 0;
+        margin: 0;
+    }
+  }
+
+
+
+/* The side navigation menu */
+.sidebar {
+    font-family: Sono, 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #ffffff00;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: #36013e;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    text-decoration: underline;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    text-decoration: overline;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }

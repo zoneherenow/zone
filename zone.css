@@ -4,13 +4,28 @@
 }
 
 @font-face {
-    font-family: Roman, 'Times New Roman', Times, serif;
+    font-family: Roman;
     src: url(fonts/RomanSerif.ttf);
 }
 
 @font-face {
     font-family: Sono;
     src: url(fonts/Sono-Regular.woff2);
+}
+
+@font-face {
+    font-family: IMFell;
+    src: url(fonts/FeDPrm2.ttf);
+}
+
+@font-face {
+    font-family: IMFellFrench;
+    src: url(fonts/FeFCrm2.ttf);
+}
+
+@font-face {
+    font-family: HanSerif;
+    src: url(fonts/SourceHanSerifSC-Regular.otf);
 }
 
 body {
@@ -22,7 +37,6 @@ body {
 }
 
 h1 {
-    font-family: Sono, 'Courier New', Courier, monospace;
     font-size: 3em;
     letter-spacing: 3px;
 }
@@ -41,7 +55,7 @@ img {
 @media only screen and (max-width: 600px) {
     
     body {
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 
     .container {
@@ -59,7 +73,7 @@ img {
 
 /* The side navigation menu */
 .sidebar {
-    font-family: Sono, 'Courier New', Courier, monospace;
+    font-family: Roman, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     width: 200px;

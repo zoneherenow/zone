@@ -36,6 +36,10 @@ body {
     line-height: 125%;
 }
 
+a {
+    color: #36013e;
+}
+
 h1 {
     font-size: 3em;
     letter-spacing: 3px;
@@ -47,6 +51,10 @@ img {
     padding-bottom: 20px;
 }
 
+.sidebar.img {
+    padding-bottom: 0px;
+}
+
 .container {
     padding: 2em 2em 0;
     margin: 0;
@@ -55,7 +63,7 @@ img {
 @media only screen and (max-width: 600px) {
     
     body {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 
     .container {
@@ -81,6 +89,15 @@ img {
     position: fixed;
     height: 100%;
     overflow: auto;
+  }
+
+  .sidebar p {
+    display: block;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #36013e;
+    padding: 5px;
+    text-decoration: none;
   }
   
   /* Sidebar links */
@@ -116,6 +133,7 @@ img {
       position: relative;
     }
     .sidebar a {float: left;}
+    .sidebar p {float: left;}
     div.content {margin-left: 0;}
   }
   

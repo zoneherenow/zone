@@ -147,14 +147,16 @@ img {
       height: auto;
       position: relative;
     }
-    .sidebar a {float: left; font-size: 0.9em;}
-    .sidebar p {float: left; font-size: 1.2em;}
+    .sidebar a {float: left;}
+    .sidebar p {float: left;}
     div.content {margin-left: 0;}
 
     .sidebar a:not(:first-child) {display: none;}
     .sidebar a.icon {
       float: right;
       display: block;
+      font-size: 24px;
+      padding-top: 18px;
     }
 
     .sidebar.responsive {position: relative;}
@@ -167,7 +169,7 @@ img {
     float: none;
     display: block;
     text-align: right;
-    padding-bottom: 1px;
+    padding-bottom: 3px;
     }
   }
   

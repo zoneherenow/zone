@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Roman;
+    src: url(fonts/RomanSerif.ttf);
+}
+
+@font-face {
+    font-family: AvaraBold;
+    src: url(fonts/Avara-Bold.otf);
+}
+
+@font-face {
+    font-family: AvaraBoldItalic;
+    src: url(fonts/Avara-BoldItalic.otf);
+}
+
+body {
+    color: #000000;
+    font-family: 'Roman', 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 125%;
+    background-color: rgb(255, 255, 255);
+}
+
+h1 { 
+    font-family: AvaraBoldItalic, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-family: AvaraBold, 'Times New Roman', Times, serif;
+}
+
+a {
+    color: #212121;
+}
+
+a:hover {
+  text-shadow: 2px 2px 10px #969696, 3px 3px 10px rgb(230, 243, 255);
+}
+
+.details {
+    font-size: 0.9em;
+}
+
+.subhead {
+    font-family: AvaraBoldItalic, 'Times New Roman', Times, serif;
+}
+
+.return {
+    font-family: AvaraBold, 'Times New Roman', Times, serif;
+    font-size: 0.7em;
+    color: #343434;
+    text-shadow: #ffffff;
+}
+
+.returnimg {
+    width: 200px;
+}
+
+.doors {
+    width: 70px;
+    opacity: 60%;
+    -webkit-filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.5));
+    margin-top: -8px;
+}
+
+.doortext {
+    font-family: AvaraBold, 'Times New Roman', Times, serif;
+    font-size: 0.7em;
+    color: #343434;
+    text-shadow: #ffffff;
+    margin-left: -50px;
+    background-color : #ffffff;    
+}
+
+.shadowfilter {
+    -webkit-filter: drop-shadow(8px 8px 4px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(8px 8px 4px rgba(0, 0, 0, 0.5));
+}
+
+.doorlink {
+    text-decoration: none;
+}

@@ -30,19 +30,36 @@
 
 body {
     color: #36013e;
-    font-family: Roman, 'Times New Roman', Times, serif;
+    font-family: 'Roman', 'Times New Roman', Times, serif;
     font-size: 1.2em;
     text-align: justify;
     line-height: 125%;
+    background-color: rgb(248, 246, 243);
+}
+
+
+h1 {
+    font-family: 'Sono', 'Courier New', Courier, monospace;  
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-family: 'Sono', 'Courier New', Courier, monospace; 
 }
 
 a {
     color: #36013e;
 }
 
-h1 {
-    font-size: 3em;
-    letter-spacing: 3px;
+a:hover {
+  font-weight: 600;  
+  text-shadow: 2px 2px 10px #adadad, 3px 3px 10px rgb(230, 243, 255);
+}
+
+pre {
+  font-family: 'Roman', 'Times New Roman', Times, serif;
+  font-size: 1.15rem;
 }
 
 img {
@@ -51,14 +68,67 @@ img {
     padding-bottom: 20px;
 }
 
-.sidebar.img {
-    padding-bottom: 0px;
+.shadowfilter {
+    -webkit-filter: drop-shadow(8px 8px 4px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(8px 8px 4px rgba(0, 0, 0, 0.5));
+}
+
+
+.navitem {
+  font-family: 'Sono', 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+}
+
+.table {
+  font-size: 0.9em;
+  color: #36013e;
+}
+
+.table>:not(caption)>*>* {
+  background-color: transparent;
 }
 
 .container {
-    padding: 2em 2em 0;
-    margin: 0;
+  padding: 5%;
 }
+
+.subhead {
+  letter-spacing: 1.1ch;
+}
+
+.details {
+  font-family: 'Sono', 'Courier New', Courier, monospace;
+  font-size: 0.75em;
+  letter-spacing: -0.1ch;
+}
+
+.accordion-button {
+    font-size: 1rem;
+    color: #36013e;
+    font-family: 'Roman', 'Times New Roman', Times, serif;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white;
+  background-color: #36013e; 
+}
+
+#typing-text {
+  font-size: 0.8em;
+}
+
+#typing-text::after {
+  content: '|';
+  display: inline;
+  animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
 
 @media only screen and (max-width: 600px) {
     
@@ -66,117 +136,7 @@ img {
         font-size: 1.3em;
     }
 
-    .container {
-        padding: 30px 0px;
-        margin: 0px 30px;
-    }
-
-    .container {
-        padding: 1em 0.4em 0;
-        margin: 0;
-    }
   }
 
 
-
-/* The side navigation menu */
-.sidebar {
-    font-family: Roman, 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #ffffff00;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
-
-  .sidebar p {
-    display: block;
-    font-size: 1.3em;
-    font-weight: 700;
-    color: #36013e;
-    padding: 5px;
-    text-decoration: none;
-  }
-  
-  /* Sidebar links */
-  .sidebar a {
-    display: block;
-    color: #36013e;
-    padding: 15px;
-    text-decoration: none;
-  }
-  
-  /* Active/current link */
-  .sidebar a.active {
-    text-decoration: underline;
-  }
-  
-  /* Links on mouse-over */
-  .sidebar a:hover:not(.active) {
-    text-decoration: overline;
-  }
-
-  .sidebar .icon {
-    display: none;
-  }
-
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-
-
-
-  
-  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-  div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-  }
-  
-  /* On screens that are less than 700px wide, make the sidebar into a topbar */
-  @media screen and (max-width: 600px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left; font-size: 1.3em;}
-    .sidebar p {float: left;}
-    div.content {margin-left: 0;}
-
-    .sidebar a:not(:first-child) {display: none;}
-    .sidebar a.icon {
-      float: right;
-      display: block;
-      font-size: 30px;
-      padding-top: 18px;
-    }
-
-    .sidebar.responsive {position: relative;}
-    .sidebar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    }
-    .sidebar.responsive a {
-    float: none;
-    display: block;
-    text-align: right;
-    padding-bottom: 3px;
-    }
-  }
-  
-  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  }
+/* redo side menu using setup for kyatos.com*/

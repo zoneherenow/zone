@@ -42,11 +42,23 @@ nav a img {
 }
 
 .btn {
-    font-family: 'Garamond Narrow', 'Times New Roman', Times, serif;
-    font-size: 1.5em;
+    font-family: 'Bibliophile', 'Times New Roman', Times, serif;
+    font-size: 2.8em;
+    letter-spacing: 0.2ch;
     font-weight: 600;
-    border-radius: 30px;
-    padding: 1% 2%;
+    border-radius: 20px;
+    width: 100%;
+    margin: 0% 0%;
+    padding: 0% 3%;
+    background-color: #FEFFE9;
+    border-color: transparent;
+    height: 60px;
+}
+
+.btn:hover {
+    background-color: #FEFFE9;
+    box-shadow: 0 0 10px 8px #FEFFE9;
+    border-color: transparent;
 }
 
 .quote {
@@ -69,6 +81,13 @@ nav a img {
 .header::first-letter {
     font-family: 'Bibliophile', 'Times New Roman', Times, serif;
     font-size: 2em;
+}
+
+.sgimg {
+    filter: blur(2px);
+    width: 100%; 
+    position: relative;
+    z-index: -1000;
 }
 
 #horsegif {

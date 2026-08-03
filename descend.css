@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url(descendants/Arial\ Narrow.woff);
+}
+
+@font-face {
+    font-family: 'Bibliophile';
+    src: url(descendants/BibliophileScript-Bold.woff);
+}
+
+@font-face {
+    font-family: 'Garamond Narrow';
+    src: url(descendants/garamondnarrow.woff);
+}
+
+@font-face {
+    font-family: HanSerif;
+    src: url(fonts/SourceHanSerifSC-Regular.otf);
+}
+
+
+body {
+    
+    background: radial-gradient(circle at top left, #002B40, #011922); 
+    font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: #FEFFE9;
+}
+
+nav {
+    z-index: 1000;          /* Keeps nav on top of other content */
+    padding: 10px 30px;
+}
+
+nav a img {
+    margin: 12px;
+    width: 50px;
+}
+
+.container {
+  padding: 5%;
+}
+
+.btn {
+    font-family: 'Garamond Narrow', 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 1% 2%;
+}
+
+.quote {
+    font-family: 'Bibliophile', 'Times New Roman', Times, serif;
+    font-size: 2.2em;
+    line-height: 72%;
+    letter-spacing: 0.2ch;
+    text-shadow: 
+    0 0 4px #74746f,   /* Inner tight glow */
+    0 0 4px #74746f,  /* Medium halo */
+    0 0 20px #FEFFE9,  /* Soft ambient glow */
+    0 0 40px #FEFFE9;  /* Deep background radiance */
+}
+
+.header {
+    font-family: 'Garamond Narrow', 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+
+.header::first-letter {
+    font-family: 'Bibliophile', 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+
+#horsegif {
+  /* horizontal-offset vertical-offset blur-radius color */
+  filter: drop-shadow(0px 0px 15px #74746f);
+  filter: blur(4px);
+  width: 150%;
+}
+
+
+@media only screen and (min-width: 768px) {
+    #credits {
+        margin-top: -20%;
+    }   
+    #thanks {
+        margin-top: -30%;
+    }  
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: 0px 5px;
+    }
+
+    nav a img {
+    margin: 8px;
+    width: 35px;
+    }
+
+    #horsegif {
+        /* horizontal-offset vertical-offset blur-radius color */
+        filter: drop-shadow(0px 0px 15px #74746f);
+        filter: blur(4px);
+        width: 100%;
+        }
+
+}
+
